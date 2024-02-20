@@ -1,71 +1,9 @@
-//import java.util.ArrayList;
-//import java.util.List;
-//import java.util.Random;
-//
-//class AntColony {
-//    private int numAnts;
-//    private int numNodes;
-//    private double[][] pheromones;
-//    private double[][] distances;
-//
-//    public AntColony(int numAnts, int numNodes) {
-//        this.numAnts = numAnts;
-//        this.numNodes = numNodes;
-//        this.pheromones = new double[numNodes][numNodes];
-//        this.distances = new double[numNodes][numNodes];
-//
-//        // Initialize pheromones and distances (you need to set proper values)
-//        initializePheromones();
-//        initializeDistances();
-//    }
-//
-//    public void solve() {
-//        int maxIterations = 100;
-//        for (int iteration = 0; iteration < maxIterations; iteration++) {
-//            List<List<Integer>> antPaths = new ArrayList<>();
-//            for (int ant = 0; ant < numAnts; ant++) {
-//                List<Integer> path = generateAntPath();
-//                antPaths.add(path);
-//            }
-//            updatePheromones(antPaths);
-//        }
-//        // Final pheromone matrix can be used to get the best path found
-//    }
-//
-//    private List<Integer> generateAntPath() {
-//        // Implement your logic for generating an ant path here
-//        List<Integer> path = new ArrayList<>();
-//        // Add nodes to the path based on your ant algorithm
-//        return path;
-//    }
-//
-//    private void updatePheromones(List<List<Integer>> antPaths) {
-//        // Implement your logic for updating pheromones based on ant paths
-//    }
-//
-//    private void initializePheromones() {
-//        // Implement your logic for initializing pheromones
-//    }
-//
-//    private void initializeDistances() {
-//        // Implement your logic for initializing distances
-//    }
-//}
-//
-//public class AntColonyExample {
-//    public static void main(String[] args) {
-//        int numAnts = 5;
-//        int numNodes = 10;
-//
-//        AntColony antColony = new AntColony(numAnts, numNodes);
-//        antColony.solve();
-//    }
-//}
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class AntColony {
+public class Question5a {
 
     private double[][] distances;
     private double[][] pheromones;
@@ -74,7 +12,7 @@ public class AntColony {
     private double alpha;
     private double beta;
 
-    public AntColony(double[][] distances, int numAnts, double decay, double alpha, double beta) {
+    public Question5a(double[][] distances, int numAnts, double decay, double alpha, double beta) {
         this.distances = distances;
         this.numAnts = numAnts;
         this.decay = decay;
@@ -242,7 +180,7 @@ public class AntColony {
         double alpha = 1;
         double beta = 2;
 
-        AntColony antColony = new AntColony(distances, numAnts, decay, alpha, beta);
+        Question5a antColony = new Question5a(distances, numAnts, decay, alpha, beta);
         int[] bestTour = antColony.solve(1000);
 
         System.out.print("Best Tour: ");

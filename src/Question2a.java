@@ -10,7 +10,7 @@
 //        The sum of dresses = 2 + 1 + 3 + 0 + 2 = 8.
 //
 //        Since there are 5 sewing machines, the target number of dresses for each machine is 8 / 5 = 1.6. However, since the dresses must be integers, equalizing is not possible, and the correct output should be -1.
-public class EqualizeDresses {
+public class Question2a {
 
     public static int minMovesToEqualize(int[] dresses) {
         int n = dresses.length;

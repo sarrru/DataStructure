@@ -64,7 +64,7 @@ class Graph {
     }
 }
 
-public class KruskalAlgorithm {
+public class Question3b {
     public static void main(String[] args) {
         int vertices = 4;
         Graph graph = new Graph(vertices);

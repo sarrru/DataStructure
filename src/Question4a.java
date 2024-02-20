@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class MazeGame {
+public class Question4a {
 
     public static int minStepsToCollectAllKeys(String[] grid) {
         int m = grid.length;

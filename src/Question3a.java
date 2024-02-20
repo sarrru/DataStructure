@@ -1,11 +1,11 @@
 import java.util.PriorityQueue;
 
-public class ScoreTracker {
+public class Question3a {
 
     private PriorityQueue<Double> minHeap; // stores the larger half of the scores
     private PriorityQueue<Double> maxHeap; // stores the smaller half of the scores
 
-    public ScoreTracker() {
+    public Question3a() {
         minHeap = new PriorityQueue<>();
         maxHeap = new PriorityQueue<>((a, b) -> Double.compare(b, a)); // max heap comparator
     }
@@ -40,7 +40,7 @@ public class ScoreTracker {
     }
 
     public static void main(String[] args) {
-        ScoreTracker scoreTracker = new ScoreTracker();
+        Question3a scoreTracker = new Question3a();
         scoreTracker.addScore(85.5);
         scoreTracker.addScore(92.3);
         scoreTracker.addScore(77.8);

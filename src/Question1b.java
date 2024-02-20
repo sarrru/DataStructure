@@ -1,7 +1,9 @@
+//Your task is to determine the minimum time needed to build all the engines using the available engineers
+
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-public class MinimumEngineBuildTime {
+public class Question1b {
 
     public static int minTimeToBuildEngines(int[] engines, int splitCost) {
         int n = engines.length;

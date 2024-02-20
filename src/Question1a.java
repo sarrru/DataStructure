@@ -1,4 +1,5 @@
-public class MinimumCostDecoration {
+// find the minimum cost to decorate all the venues while adhering to the adjacency constraint.
+public class Question1a {
 
     public static int minCostToDecorate(int[][] costs) {
         if (costs == null || costs.length == 0 || costs[0].length == 0) {

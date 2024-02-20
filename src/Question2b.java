@@ -1,9 +1,11 @@
+//You need to determine the set of individuals who will eventually know the secret after all the possible secret-sharing intervals have occurred.
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class SecretSharing {
+public class Question2b {
 
     public static List<Integer> findIndividuals(int n, int[][] intervals, int firstPerson) {
         Set<Integer> knownSet = new HashSet<>();

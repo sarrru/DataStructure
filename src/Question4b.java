@@ -11,7 +11,7 @@ class TreeNode {
     }
 }
 
-public class ClosestValuesInBST {
+public class Question4b {
 
     public static List<Integer> closestValues(TreeNode root, double target, int x) {
         List<Integer> result = new ArrayList<>();

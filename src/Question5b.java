@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ImpactedNetworkDevices {
+public class Question5b {
 
     public static List<Integer> findImpactedDevices(int[][] edges, int targetDevice) {
         Map<Integer, Set<Integer>> networkMap = buildNetworkMap(edges);
